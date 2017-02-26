@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="2dp"
+    android:paddingLeft="2dp"
+    android:paddingBottom="2dp"
+    android:paddingRight="2dp"
+    android:background="#FFF6D0">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingLeft="2dp"
+            android:paddingBottom="2dp"
+            android:paddingRight="2dp">
+            <TextView
+                android:text="@string/title_activity_dns_prayer"
+                android:id="@+id/IntroDNS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:paddingLeft="20dp"
+                android:paddingBottom="2dp"
+                android:paddingRight="20dp"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:id="@+id/JC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/IntroDNS"
+                android:text="@string/JC" />
+            <TextView
+                android:id="@+id/DS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/JC"
+                android:text="@string/DS" />
+            <TextView
+                android:id="@+id/BO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/DS"
+                android:text="@string/BO" />
+            <TextView
+                android:id="@+id/SW"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/BO"
+                android:text="@string/Swieci" />
+            <ImageView
+                android:id="@+id/SNE"
+                android:layout_centerInParent="true"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:layout_below="@id/SW"
+                android:src="@drawable/dnsmalelogo"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

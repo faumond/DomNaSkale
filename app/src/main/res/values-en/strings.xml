@@ -1,0 +1,118 @@
+<resources>
+    // app name
+    <string name="app_name">House on Rock</string>
+    // activity: intro
+    <string name="IntroDNS">
+        House on Rock
+    </string>
+    <string name="DescDNS">
+        Catholic Community for Prayer and Evangelization - Wrocław, PL
+    </string>
+    <string name="Mt7">
+        <p>\'Therefore, everyone who listens to these words of mine and acts on them will be like
+            a sensible man who built his house on rock. Rain came down, floods rose, gales blew
+            and hurled themselves against that house, and it did not fall: it was founded on rock.
+            But everyone who listens to these words of mine and does not act on them will be like
+            a stupid man who built his house on sand. Rain came down, floods rose, gales blew and
+            struck that house, and it fell; and what a fall it had!\'</p>
+    </string>
+    <string name="Mt7_sigla">
+        <b>Matthew 7:24-27</b>
+    </string>
+    // activity: dns_prayer
+    <string name="JC">
+        <p><b>Jesus Christ</b>, przychodzę do Ciebie jako Skały i Fundamentu mojego życia osobistego i rodzinnego.
+        Wyznaję Cię dziś jako Pana wszystkich dziedzin życia, relacji i decyzji oraz potwierdzam,
+        że chcę Cię coraz bardziej poznawać i głosić całym życiem jako Tego,
+        w którym obcjawiła się ojcowska miłość Boga. Ty jestes źródłem i centrum życia naszej wspólnoty.</p>
+    </string>
+    <string name="DS">
+        <p><b>Holy Spirit</b>, który uzdalniasz mnie do trwania w Jezusie jako Skale i Fundamencie mojego życia.
+        Prowadź mnie tak, bym widział Jezusa i na nim budował moje życie. Uzdolnij mnie do życia w Tobie,
+        do wytrwania w nawróceniu i we wspólnocie, dla zbudowania mnie oraz moich sióstr i braci w wierze.</p>
+    </string>
+    <string name="BO">
+        <p><b>Father of Heaven</b>, dziękuję Ci za wspólnotę "Dom na Skale", w której jestem i mogę doświadczać
+        Twojej miłości oraz kroczyć z innymi drogą wiary. Proszę Cię o błogosławieństwo dla Pasterza,
+        liderów i wszystkich związanych ze wspólnotą. Daj nam jedność we wspólnocie i jedność z Kościołem.
+        Uzdolnij nas słabych do wzajemnej troski i budowania w duchu miłości na Skale, którą jest Jezus.</p>
+    </string>
+    <string name="Swieci">
+        <b>Mary</b>, the Mother of New Evangelization - pray for us.\n
+        Saint Apostles, Peter and Paul, pray for us.
+    </string>
+    // Option Menu
+    <string name="Menu_app_main">
+        Intro
+    </string>
+    <string name="Menu_dns_prayer">
+        Prayer
+    </string>
+    <string name="Menu_dns_news">
+        Recent
+    </string>
+    <string name="Menu_dns_info">
+        Calendar
+    </string>
+    <string name="Menu_reminder">
+        Reminders
+    </string>
+    <string name="Menu_app_options">
+        Options
+    </string>
+    <string name="Menu_dns_contact">
+        Contact
+    </string>
+    // activity titles
+    <string name="title_activity_app_main">House on Rock</string>
+    <string name="title_activity_dns_prayer">Prayer</string>
+    <string name="title_activity_dns_info">Calendar</string>
+    <string name="title_activity_dns_news">Recent News</string>
+    <string name="title_activity_reminder">Reminders</string>
+    <string name="title_activity_app_options">Options</string>
+    <string name="title_activity_contact">Contact</string>
+    // Activity "Reminder"
+    <string name="Odśwież">"Refresh"</string>
+    <string name="UstawPrzypomnienie">Set Reminder</string>
+    <string name="Przyp_SpotkanieSrodowe">Wednesday Meeting</string>
+    <string name="Przyp_SpotkaniePrzymierza">Covenant Meeting</string>
+    <string name="Przypomnienie">Remind earlier:</string>
+    <string-array name="PrzypomnieniaOdstepy">
+        <item>1 hour</item>
+        <item>2 hours</item>
+        <item>10 hours</item>
+        <item>1 day</item>
+        <item>2 days</item>
+    </string-array>
+
+    <string name="Przyp_PrzyciskReset">Reset Settings</string>
+    <string name="Przyp_PrzyciskUstaw">Set Reminder</string>
+    <string name="Przyp_Wybrano">Selected option: </string>
+    // Activity "Aktualności"
+    <string name="EventWroc">Wrocław Events</string>
+    <string name="EventDNS">House on the Rock</string>
+    <string name="EventSDM">World Youth Days</string>
+    <string name="EventCath">Universal Church</string>
+    <string name="EventSNE">SNE</string>
+    <string name="ActualizationDate">Actualized on</string>
+    <string name="HeaderEvent">Events</string>
+    <string name="HeaderBook">Books</string>
+    <string name="HeaderOthers">Others</string>
+    <string name="HtmlEventClass">Type:</string>
+    <string name="HtmlEventDateTime">Date:</string>
+    <string name="HtmlEventPlace">Place:</string>
+    <string name="HtmlEventInfo">Info:</string>
+    <string name="HtmlEventDesc">Description:</string>
+    <string name="HtmlEventWWW">www:</string>
+    <string name="HtmlBooksAuthor">Author:</string>
+    <string name="HtmlBooksTitle">Title:</string>
+    <string name="HtmlBooksDesc">Description:</string>
+    <string name="HtmlOthersInfo">Info:</string>
+    <string name="HtmlOthersDesc">Description:</string>
+    <string name="contact_dns_name">Catholic Prayer and Evangelization Community "House on Rock"</string>
+    <string name="contact_sne_name">School Of New Evangelization do Saint Apostles Peter and Paul</string>
+    <string name="contact_invitation">We invite you to our prayer meetings!</string>
+    <string name="contact_invitation2">Our address::\nCentrum&#160;Duszpasterskie Archidiecezji&#160;Wrocławskiej\n<b>Wrocław, ul.&#160;Katedralna&#160;4</b>.\nDates of&#160;events you can find on&#160;Recent News.</string>
+
+    <string name="KomunikatBledu">Cannot read from file - incorrect syntax.</string>
+</resources>

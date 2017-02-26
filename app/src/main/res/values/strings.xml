@@ -1,0 +1,105 @@
+<resources>
+    // app name
+    <string name="app_name">Dom na Skale</string>
+    // activity: intro
+    <string name="IntroDNS">
+        Dom Na Skale
+    </string>
+    <string name="DescDNS">
+        Katolicka Wspólnota Modlitewno-Ewanglizacyjna - Wrocław
+    </string>
+    <string name="Mt7">
+        <p>„Każdego więc, kto tych słów moich słucha i&#160;wypełnia je,
+        można porównać z&#160;człowiekiem roztropnym, który dom swój zbudował na&#160;skale.
+        Spadł deszcz, wezbrały potoki, zerwały się wichry i&#160;uderzyły w&#160;ten dom.
+        On jednak nie runął, bo&#160;na&#160;skale był utwierdzony.
+        Każdego zaś, kto tych słów moich słucha, a&#160;nie wypełnia ich,
+        można porównać z&#160;człowiekiem nierozsądnym, który dom swój zbudował na&#160;piasku.
+        Spadł deszcz, wezbrały potoki, zerwały się wichry i&#160;rzuciły się na&#160;ten dom.
+        I&#160;runął, a&#160;upadek jego był wielki”.</p>
+    </string>
+    <string name="Mt7_sigla">
+        <b>Mt 7,24-27</b>
+    </string>
+    // activity: dns_prayer
+    <string name="JC">
+        <p><b>Jezu Chryste</b>, przychodzę do&#160;Ciebie jako Skały i&#160;Fundamentu mojego życia osobistego i&#160;rodzinnego.
+        Wyznaję Cię dziś jako&#160;Pana wszystkich dziedzin życia, relacji i&#160;decyzji oraz&#160;potwierdzam,
+        że&#160;chcę Cię coraz bardziej poznawać i&#160;głosić całym życiem jako Tego,
+        w&#160;którym objawiła się ojcowska miłość Boga. Ty jesteś źródłem i&#160;centrum życia naszej wspólnoty.</p>
+    </string>
+    <string name="DS">
+        <p><b>Duchu Święty</b>, który uzdalniasz mnie do&#160;trwania w&#160;Jezusie jako&#160;Skale i&#160;Fundamencie mojego życia.
+        Prowadź mnie tak, bym widział Jezusa i&#160;na&#160;nim budował moje życie. Uzdolnij mnie do&#160;życia w&#160;Tobie,
+        do&#160;wytrwania w&#160;nawróceniu i&#160;we&#160;wspólnocie, dla&#160;zbudowania mnie oraz&#160;moich sióstr i&#160;braci w&#160;wierze.</p>
+    </string>
+    <string name="BO">
+        <p><b>Ojcze Niebieski</b>, dziękuję Ci za&#160;wspólnotę "Dom na&#160;Skale", w&#160;której jestem i&#160;mogę doświadczać
+        Twojej miłości oraz&#160;kroczyć z&#160;innymi drogą wiary. Proszę Cię o&#160;błogosławieństwo dla&#160;Pasterza,
+        lidera i&#160;wszystkich związanych ze&#160;wspólnotą. Daj nam jedność we&#160;wspólnocie i&#160;jedność z&#160;Kościołem.
+        Uzdolnij nas słabych do&#160;wzajemnej troski i&#160;budowania w&#160;duchu miłości na&#160;Skale, którą jest Jezus.</p>
+    </string>
+    <string name="Swieci">
+        <b>Maryjo</b>, Gwiazdo Nowej Ewangelizacji - módl się za&#160;nami.\n
+        Święci Apostołowie Piotrze i&#160;Pawle - módlcie się za&#160;nami.
+    </string>
+    // Option Menu
+    <string name="Menu_app_main">Intro</string>
+    <string name="Menu_dns_prayer">Modlitwa</string>
+    <string name="Menu_dns_news">Aktualności</string>
+    <string name="Menu_dns_info">Kalendarz</string>
+    <string name="Menu_reminder">Przypomnienia</string>
+    <string name="Menu_app_options">Opcje</string>
+    <string name="Menu_dns_contact">Kontakt</string>
+    // activity titles
+    <string name="title_activity_app_main">Dom na Skale</string>
+    <string name="title_activity_dns_prayer">Modlitwa</string>
+    <string name="title_activity_dns_info">Kalendarz</string>
+    <string name="title_activity_dns_news">Aktualności</string>
+    <string name="title_activity_reminder">Przypomnienia</string>
+    <string name="title_activity_app_options">Opcje</string>
+    <string name="title_activity_contact">Kontakt</string>
+    // Activity "Reminder"
+    <string name="Odśwież">Odśwież</string>
+    <string name="UstawPrzypomnienie">Ustaw Przypomnienie</string>
+    <string name="Przyp_SpotkanieSrodowe">Spotkanie Środowe</string>
+    <string name="Przyp_SpotkaniePrzymierza">Spotkanie Przymierza</string>
+    <string name="Przypomnienie">Przypomnij wcześniej:</string>
+    <string-array name="PrzypomnieniaOdstepy">
+        <item>1 godz.</item>
+        <item>2 godz.</item>
+        <item>10 godz.</item>
+        <item>1 dzień</item>
+        <item>2 dni</item>
+    </string-array>
+
+    <string name="Przyp_PrzyciskReset">Reset Ustawień</string>
+    <string name="Przyp_PrzyciskUstaw">Ustaw Przypomnienie</string>
+    <string name="Przyp_Wybrano">Wybrana opcja: </string>
+    // Activity "Aktualności"
+    <string name="EventWroc">Wydarzenia Wrocławskie</string>
+    <string name="EventDNS">Dom Na Skale</string>
+    <string name="EventSDM">Światowe Dni Młodzieży</string>
+    <string name="EventCath">Kościół Powszechny</string>
+    <string name="EventSNE">Szkoła Nowej Ewangelizacji</string>
+    <string name="ActualizationDate">Aktualizacja z dnia</string>
+    <string name="HeaderEvent">Wydarzenia</string>
+    <string name="HeaderBook">Książki</string>
+    <string name="HeaderOthers">Inne</string>
+    <string name="HtmlEventClass">Typ:</string>
+    <string name="HtmlEventDateTime">Data:</string>
+    <string name="HtmlEventPlace">Miejsce:</string>
+    <string name="HtmlEventInfo">Info:</string>
+    <string name="HtmlEventDesc">Opis:</string>
+    <string name="HtmlEventWWW">www:</string>
+    <string name="HtmlBooksAuthor">Autor:</string>
+    <string name="HtmlBooksTitle">Tytuł:</string>
+    <string name="HtmlBooksDesc">Opis:</string>
+    <string name="HtmlOthersInfo">Info:</string>
+    <string name="HtmlOthersDesc">Opis:</string>
+    <string name="contact_dns_name">Wspólnota Modlitewno-Ewangelizacyjna "Dom na Skale"</string>
+    <string name="contact_sne_name">Szkoła Nowej Ewangelizacji śś. Apostołów Piotra i Pawła</string>
+    <string name="contact_invitation">Zapraszamy do Domu na Skale!</string>
+    <string name="contact_invitation2">Nasz adres to:\nCentrum&#160;Duszpasterskie Archidiecezji&#160;Wrocławskiej\n<b>Wrocław, ul.&#160;Katedralna&#160;4</b>.\nTerminy spotkań znajdziesz w&#160;aktualnościach.</string>
+    <string name="KomunikatBledu">Błąd odczytu pliku - niepoprawna konstrukcja pliku.</string>
+</resources>
