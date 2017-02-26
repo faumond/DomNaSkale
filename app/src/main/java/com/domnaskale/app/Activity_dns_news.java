@@ -1,7 +1,6 @@
 package com.domnaskale.app;
 
 import android.Manifest;
-import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -15,7 +14,6 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.io.BufferedInputStream;
 import java.io.ByteArrayOutputStream;
@@ -28,49 +26,12 @@ import java.net.ProtocolException;
 import java.net.URL;
 
 public class Activity_dns_news extends AppCompatActivity {
-    private static final int dns_prayer   = 1;
-    private static final int dns_news     = 2;
-    private static final int dns_info     = 3;
-    private static final int app_main     = 4;
-    private static final int dns_contact  = 5;
-
     String DownloadLinkURL = "http://www.domnaskale.eu";
     String HTML_WebPage = "";
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        Intent intent;
-
-        switch(item.getOrder()){
-            case app_main:
-                //Toast.makeText(getBaseContext(),R.string.Menu_app_main,Toast.LENGTH_SHORT).show();
-                intent = new Intent(this, MainScreen.class);
-                startActivity(intent);
-                break;
-            case dns_prayer:
-                //Toast.makeText(getBaseContext(),R.string.Menu_dns_prayer,Toast.LENGTH_SHORT).show();
-                intent = new Intent(this, Activity_dns_prayer.class);
-                startActivity(intent);
-                break;
-            case dns_news:
-                //Toast.makeText(getBaseContext(),R.string.Menu_dns_contact,Toast.LENGTH_SHORT).show();
-                intent = new Intent(this, Activity_dns_news.class);
-                startActivity(intent);
-                break;
-            case dns_info:
-                //Toast.makeText(getBaseContext(),R.string.Menu_dns_info,Toast.LENGTH_SHORT).show();
-                intent = new Intent(this, Activity_dns_info.class);
-                startActivity(intent);
-                break;
-            case dns_contact:
-                //Toast.makeText(getBaseContext(),R.string.Menu_dns_contact,Toast.LENGTH_SHORT).show();
-                intent = new Intent(this, Activity_contact.class);
-                startActivity(intent);
-                break;
-            default:
-                Toast.makeText(getBaseContext(),"Default option executed",Toast.LENGTH_SHORT).show();
-                break;
-        }
+        startActivity(IntentManager.itemSelected(item,getBaseContext(),this));
         return super.onOptionsItemSelected(item);
     }
 
