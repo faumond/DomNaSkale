@@ -44,7 +44,7 @@
         Święci Apostołowie Piotrze i&#160;Pawle - módlcie się za&#160;nami.
     </string>
     // Option Menu
-    <string name="Menu_app_main">Intro</string>
+    <string name="Menu_app_main">Start</string>
     <string name="Menu_dns_prayer">Modlitwa</string>
     <string name="Menu_dns_news">Aktualności</string>
     <string name="Menu_dns_info">Kalendarz</string>

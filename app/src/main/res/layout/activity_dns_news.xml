@@ -38,7 +38,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
             <TextView
-                android:text="wczytywanie..."
+                android:text="pobieranie danych ..."
                 android:id="@+id/News"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
