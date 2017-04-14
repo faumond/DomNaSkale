@@ -17,34 +17,16 @@
         <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="2dp"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
             android:paddingLeft="20dp"
             android:paddingBottom="2dp"
             android:paddingRight="20dp">
-            <TextView
-                android:id="@+id/IntroDNS"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="2dp"
-                android:paddingLeft="20dp"
-                android:paddingBottom="2dp"
-                android:paddingRight="20dp"
-                android:textSize="22dp"
-                android:textStyle="bold"
-                android:textAllCaps="true"
-                android:textAlignment="center"
-                android:text="@string/title_activity_dns_info"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
-            <TextView
+            <WebView  xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/webview"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Recent DnS Events"
-                android:autoLink="web"
-                android:id="@+id/News"
-                android:layout_below="@+id/IntroDNS"
-                android:layout_centerHorizontal="true" />
+                android:layout_height="500dp"
+                />
         </RelativeLayout>
     </ScrollView>
 
