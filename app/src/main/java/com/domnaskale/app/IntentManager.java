@@ -33,7 +33,7 @@ public class IntentManager {
                 return intent;
             case dns_info:
                 //Toast.makeText(getBaseContext(),R.string.Menu_dns_info,Toast.LENGTH_SHORT).show();
-                intent = new Intent(activity_contact, Activity_dns_info.class);
+                intent = new Intent(activity_contact, Activity_calendar.class);
                 return intent;
             case dns_contact:
                 //Toast.makeText(getBaseContext(),R.string.Menu_dns_contact,Toast.LENGTH_SHORT).show();

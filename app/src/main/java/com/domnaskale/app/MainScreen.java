@@ -17,38 +17,7 @@ public class MainScreen extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        Intent intent;
-
-        switch(item.getOrder()){
-            case app_main:
-                //Toast.makeText(getBaseContext(),R.string.Menu_app_main,Toast.LENGTH_SHORT).show();
-                intent = new Intent(this, MainScreen.class);
-                startActivity(intent);
-                break;
-            case dns_prayer:
-                //Toast.makeText(getBaseContext(),R.string.Menu_dns_prayer,Toast.LENGTH_SHORT).show();
-                intent = new Intent(this, Activity_dns_prayer.class);
-                startActivity(intent);
-                break;
-            case dns_news:
-                //Toast.makeText(getBaseContext(),R.string.Menu_dns_contact,Toast.LENGTH_SHORT).show();
-                intent = new Intent(this, Activity_dns_news.class);
-                startActivity(intent);
-                break;
-            case dns_info:
-                //Toast.makeText(getBaseContext(),R.string.Menu_dns_info,Toast.LENGTH_SHORT).show();
-                intent = new Intent(this, Activity_dns_info.class);
-                startActivity(intent);
-                break;
-            case dns_contact:
-                //Toast.makeText(getBaseContext(),R.string.Menu_dns_contact,Toast.LENGTH_SHORT).show();
-                intent = new Intent(this, Activity_contact.class);
-                startActivity(intent);
-                break;
-            default:
-                Toast.makeText(getBaseContext(),"Default option executed",Toast.LENGTH_SHORT).show();
-                break;
-        }
+        startActivity(IntentManager.itemSelected(item,getBaseContext(),this));
         return super.onOptionsItemSelected(item);
     }
 
