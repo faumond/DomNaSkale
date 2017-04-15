@@ -18,8 +18,9 @@ public class IntentManager {
     private static final int app_main = 4;
     private static final int dns_contact = 5;
     private static final int dns_configuration = 6;
-    public static final boolean UPPER = true;
-    public static final boolean SMALLER = false;
+    public static final int UPPER = 1;
+    public static final int NO_CHANGE = 0;
+    public static final int SMALLER = -1;
     private static float fontSize = 12;
 
 
@@ -58,20 +59,22 @@ public class IntentManager {
         return null;
     }
 
-    public static void changeAllFields(View rootView, boolean upper) {
+    public static void changeAllFields(View rootView, int fontChangeDirection) {
         int childs = ((ViewGroup) rootView).getChildCount();
+        if (fontChangeDirection == 1) fontSize++;
+        if (fontChangeDirection == -1) fontSize--;
         for (int i = 0; i < childs; i++) {
-            changeGraphicalObject(((ViewGroup) rootView).getChildAt(i), upper);
+            changeGraphicalObject(((ViewGroup) rootView).getChildAt(i), fontSize);
         }
     }
 
-    public static void changeGraphicalObject(View view, boolean upper) {
+    public static void changeGraphicalObject(View view, float fontSize) {
         try {
             if (view instanceof TextView) {
-                ((TextView) view).setTextSize(upper ? ++fontSize : --fontSize);
+                ((TextView) view).setTextSize(fontSize);
             }
             if (view instanceof Button) {
-                ((TextView) view).setTextSize(upper ? ++fontSize : --fontSize);
+                ((TextView) view).setTextSize(fontSize);
             }
         } catch (Exception e) {
         }

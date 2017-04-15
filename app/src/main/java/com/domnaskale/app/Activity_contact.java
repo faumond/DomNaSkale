@@ -8,11 +8,9 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Toast;
 
-import static com.domnaskale.app.IntentManager.UPPER;
+import static com.domnaskale.app.IntentManager.NO_CHANGE;
 
 public class Activity_contact extends AppCompatActivity {
     @Override
@@ -68,7 +66,12 @@ public class Activity_contact extends AppCompatActivity {
         {
             ex.printStackTrace();
         }
-        IntentManager.changeAllFields(findViewById(R.id.activity_contact), UPPER);
     }
 
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        IntentManager.changeAllFields(findViewById(R.id.activity_contact), NO_CHANGE);
+    }
 }

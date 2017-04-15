@@ -25,7 +25,7 @@ import java.net.MalformedURLException;
 import java.net.ProtocolException;
 import java.net.URL;
 
-import static com.domnaskale.app.IntentManager.UPPER;
+import static com.domnaskale.app.IntentManager.NO_CHANGE;
 
 public class Activity_dns_news extends AppCompatActivity {
     String DownloadLinkURL = "http://www.domnaskale.eu";
@@ -51,7 +51,6 @@ public class Activity_dns_news extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(com.domnaskale.app.R.layout.activity_dns_news);
-        IntentManager.changeAllFields(findViewById(R.id.activity_dns_news), UPPER);
     }
 
     public void ReadNewsFile() {
@@ -159,6 +158,12 @@ public class Activity_dns_news extends AppCompatActivity {
         } else { //permission is automatically granted on sdk<23 upon installation
             return true;
         }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        IntentManager.changeAllFields(findViewById(R.id.activity_dns_news), NO_CHANGE);
     }
 
 }

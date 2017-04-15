@@ -5,10 +5,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.Toast;
-import android.content.Intent;
 
-import static com.domnaskale.app.IntentManager.UPPER;
+import static com.domnaskale.app.IntentManager.NO_CHANGE;
 
 public class MainScreen extends AppCompatActivity {
     private static final int dns_prayer   = 1;
@@ -34,6 +32,11 @@ public class MainScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(com.domnaskale.app.R.layout.activity_main_screen);
-        IntentManager.changeAllFields(findViewById(R.id.activity_main_screen), UPPER);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        IntentManager.changeAllFields(findViewById(R.id.activity_main_screen), NO_CHANGE);
     }
 }

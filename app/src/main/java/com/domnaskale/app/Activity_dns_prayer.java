@@ -6,7 +6,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import static com.domnaskale.app.IntentManager.UPPER;
+import static com.domnaskale.app.IntentManager.NO_CHANGE;
 
 public class Activity_dns_prayer extends AppCompatActivity {
     @Override
@@ -27,7 +27,12 @@ public class Activity_dns_prayer extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(com.domnaskale.app.R.layout.activity_dns_prayer);
-        IntentManager.changeAllFields(findViewById(R.id.activity_dns_prayer), UPPER);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        IntentManager.changeAllFields(findViewById(R.id.activity_dns_prayer), NO_CHANGE);
     }
 
 }
