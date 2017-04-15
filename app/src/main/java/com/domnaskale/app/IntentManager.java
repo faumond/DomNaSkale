@@ -32,31 +32,25 @@ public class IntentManager {
 
         switch (item.getOrder()) {
             case app_main:
-                //Toast.makeText(getBaseContext(),R.string.Menu_app_main,Toast.LENGTH_SHORT).show();
                 intent = new Intent(activity_contact, MainScreen.class);
                 return intent;
             case dns_prayer:
-                //Toast.makeText(getBaseContext(),R.string.Menu_dns_prayer,Toast.LENGTH_SHORT).show();
                 intent = new Intent(activity_contact, Activity_dns_prayer.class);
                 return intent;
             case dns_news:
-                //Toast.makeText(getBaseContext(),R.string.Menu_dns_contact,Toast.LENGTH_SHORT).show();
                 intent = new Intent(activity_contact, Activity_dns_news.class);
                 return intent;
             case dns_info:
-                //Toast.makeText(getBaseContext(),R.string.Menu_dns_info,Toast.LENGTH_SHORT).show();
                 intent = new Intent(activity_contact, Activity_calendar.class);
                 return intent;
             case dns_contact:
-                //Toast.makeText(getBaseContext(),R.string.Menu_dns_contact,Toast.LENGTH_SHORT).show();
                 intent = new Intent(activity_contact, Activity_contact.class);
                 return intent;
             case dns_configuration:
-                //Toast.makeText(getBaseContext(),R.string.Menu_dns_contact,Toast.LENGTH_SHORT).show();
                 intent = new Intent(activity_contact, Activity_configuration.class);
                 return intent;
             default:
-                Toast.makeText(baseContext, "Default option executed", Toast.LENGTH_SHORT).show();
+                Toast.makeText(baseContext, "Błąd: nie można otworzyć tego elementu menu", Toast.LENGTH_SHORT).show();
                 break;
         }
         return null;
@@ -64,8 +58,9 @@ public class IntentManager {
 
     public static void changeAllFields(View rootView, int fontChangeDirection) {
         int childs = ((ViewGroup) rootView).getChildCount();
-        if (fontChangeDirection == 1) fontSize++;
-        if (fontChangeDirection == -1) fontSize--;
+        fontSize += fontChangeDirection;
+        if (fontSize < 8) fontSize++;
+        if (fontSize > 35) fontSize--;
         sharedPreferences.putFloat(FONT_SIZE, fontSize);
         sharedPreferences.commit();
         for (int i = 0; i < childs; i++) {
@@ -79,7 +74,7 @@ public class IntentManager {
                 ((TextView) view).setTextSize(fontSize);
             }
             if (view instanceof Button) {
-                ((TextView) view).setTextSize(fontSize);
+                ((Button) view).setTextSize(fontSize);
             }
         } catch (Exception e) {
         }
