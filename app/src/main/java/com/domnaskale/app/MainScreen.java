@@ -1,12 +1,16 @@
 package com.domnaskale.app;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
+import static android.app.PendingIntent.getActivity;
 import static com.domnaskale.app.IntentManager.NO_CHANGE;
+import static com.domnaskale.app.IntentManager.setFontSize;
 
 public class MainScreen extends AppCompatActivity {
     private static final int dns_prayer   = 1;
@@ -32,6 +36,8 @@ public class MainScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(com.domnaskale.app.R.layout.activity_main_screen);
+        SharedPreferences sharedPref = getSharedPreferences("screenConfig", Context.MODE_PRIVATE);
+        setFontSize(sharedPref, sharedPref.edit());
     }
 
     @Override

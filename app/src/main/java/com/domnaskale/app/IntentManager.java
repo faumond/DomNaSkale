@@ -3,6 +3,7 @@ package com.domnaskale.app;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,7 +22,9 @@ public class IntentManager {
     public static final int UPPER = 1;
     public static final int NO_CHANGE = 0;
     public static final int SMALLER = -1;
-    private static float fontSize = 12;
+    private static final String FONT_SIZE = "fontSize";
+    private static float fontSize = 14;
+    private static SharedPreferences.Editor sharedPreferences;
 
 
     public static Intent itemSelected(MenuItem item, Context baseContext, Activity activity_contact) {
@@ -63,6 +66,8 @@ public class IntentManager {
         int childs = ((ViewGroup) rootView).getChildCount();
         if (fontChangeDirection == 1) fontSize++;
         if (fontChangeDirection == -1) fontSize--;
+        sharedPreferences.putFloat(FONT_SIZE, fontSize);
+        sharedPreferences.commit();
         for (int i = 0; i < childs; i++) {
             changeGraphicalObject(((ViewGroup) rootView).getChildAt(i), fontSize);
         }
@@ -78,5 +83,10 @@ public class IntentManager {
             }
         } catch (Exception e) {
         }
+    }
+
+    public static void setFontSize(SharedPreferences sharedPref, SharedPreferences.Editor edit) {
+        sharedPreferences = edit;
+        fontSize = sharedPref.getFloat(FONT_SIZE, 14f);
     }
 }
