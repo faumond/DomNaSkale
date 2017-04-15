@@ -7,11 +7,9 @@
     android:paddingLeft="2dp"
     android:paddingBottom="2dp"
     android:paddingRight="2dp"
-    android:background="#FFF6D0"
-    android:id="@+id/activity_main_screen">
+    android:background="#FFF6D0">
 
     <ScrollView
-        android:id="@+id/scrollview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
@@ -22,7 +20,8 @@
             android:paddingTop="2dp"
             android:paddingLeft="2dp"
             android:paddingBottom="2dp"
-            android:paddingRight="2dp">
+            android:paddingRight="2dp"
+            android:id="@+id/activity_main_screen">
             <TextView
                 android:id="@+id/IntroDNS"
                 android:layout_width="match_parent"

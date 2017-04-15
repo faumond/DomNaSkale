@@ -51,6 +51,7 @@
     <string name="Menu_reminder">Przypomnienia</string>
     <string name="Menu_app_options">Opcje</string>
     <string name="Menu_dns_contact">Kontakt</string>
+    <string name="Menu_dns_configuration">Ustawienia</string>
     // activity titles
     <string name="title_activity_app_main">Dom na Skale</string>
     <string name="title_activity_dns_prayer">Modlitwa</string>

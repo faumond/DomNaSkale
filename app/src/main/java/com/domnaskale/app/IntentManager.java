@@ -17,6 +17,7 @@ public class IntentManager {
     private static final int dns_info = 3;
     private static final int app_main = 4;
     private static final int dns_contact = 5;
+    private static final int dns_configuration = 6;
     public static final boolean UPPER = true;
     public static final boolean SMALLER = false;
     private static float fontSize = 12;
@@ -45,6 +46,10 @@ public class IntentManager {
             case dns_contact:
                 //Toast.makeText(getBaseContext(),R.string.Menu_dns_contact,Toast.LENGTH_SHORT).show();
                 intent = new Intent(activity_contact, Activity_contact.class);
+                return intent;
+            case dns_configuration:
+                //Toast.makeText(getBaseContext(),R.string.Menu_dns_contact,Toast.LENGTH_SHORT).show();
+                intent = new Intent(activity_contact, Activity_configuration.class);
                 return intent;
             default:
                 Toast.makeText(baseContext, "Default option executed", Toast.LENGTH_SHORT).show();
