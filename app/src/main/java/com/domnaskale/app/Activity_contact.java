@@ -12,6 +12,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import static com.domnaskale.app.IntentManager.UPPER;
+
 public class Activity_contact extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -66,6 +68,7 @@ public class Activity_contact extends AppCompatActivity {
         {
             ex.printStackTrace();
         }
+        IntentManager.changeAllFields(findViewById(R.id.activity_contact), UPPER);
     }
 
 }

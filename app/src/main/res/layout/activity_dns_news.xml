@@ -8,7 +8,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="2dp"
     android:background="#FFF6D0"
-    tools:context="com.domnaskale.app.Activity_dns_news">
+    tools:context="com.domnaskale.app.Activity_dns_news"
+    android:id="@+id/activity_dns_news">
     <ScrollView
         android:id="@+id/scrollview"
         android:layout_width="match_parent"

@@ -7,7 +7,8 @@
     android:paddingLeft="2dp"
     android:paddingBottom="2dp"
     android:paddingRight="2dp"
-    android:background="#FFF6D0">
+    android:background="#FFF6D0"
+    android:id="@+id/activity_dns_prayer">
 
     <ScrollView
         android:id="@+id/scrollview"

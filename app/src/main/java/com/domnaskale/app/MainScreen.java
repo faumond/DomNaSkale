@@ -8,6 +8,8 @@ import android.view.MenuItem;
 import android.widget.Toast;
 import android.content.Intent;
 
+import static com.domnaskale.app.IntentManager.UPPER;
+
 public class MainScreen extends AppCompatActivity {
     private static final int dns_prayer   = 1;
     private static final int dns_news     = 2;
@@ -32,5 +34,6 @@ public class MainScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(com.domnaskale.app.R.layout.activity_main_screen);
+        IntentManager.changeAllFields(findViewById(R.id.activity_main_screen), UPPER);
     }
 }

@@ -4,6 +4,10 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class IntentManager {
@@ -13,6 +17,9 @@ public class IntentManager {
     private static final int dns_info = 3;
     private static final int app_main = 4;
     private static final int dns_contact = 5;
+    public static final boolean UPPER = true;
+    public static final boolean SMALLER = false;
+    private static float fontSize = 12;
 
 
     public static Intent itemSelected(MenuItem item, Context baseContext, Activity activity_contact) {
@@ -44,5 +51,24 @@ public class IntentManager {
                 break;
         }
         return null;
+    }
+
+    public static void changeAllFields(View rootView, boolean upper) {
+        int childs = ((ViewGroup) rootView).getChildCount();
+        for (int i = 0; i < childs; i++) {
+            changeGraphicalObject(((ViewGroup) rootView).getChildAt(i), upper);
+        }
+    }
+
+    public static void changeGraphicalObject(View view, boolean upper) {
+        try {
+            if (view instanceof TextView) {
+                ((TextView) view).setTextSize(upper ? ++fontSize : --fontSize);
+            }
+            if (view instanceof Button) {
+                ((TextView) view).setTextSize(upper ? ++fontSize : --fontSize);
+            }
+        } catch (Exception e) {
+        }
     }
 }
