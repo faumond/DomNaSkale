@@ -50,6 +50,7 @@
     <string name="Menu_dns_info">Kalendarz</string>
     <string name="Menu_reminder">Przypomnienia</string>
     <string name="Menu_app_options">Opcje</string>
+    <string name="Menu_dns_configuration">Ustawienia</string>
     <string name="Menu_dns_contact">Kontakt</string>
     <string name="Menu_dns_groupsmat">Materiały formacyjne</string>
     // activity titles
@@ -103,19 +104,4 @@
     <string name="contact_invitation">Zapraszamy do Domu na Skale!</string>
     <string name="contact_invitation2">Nasz adres to:\nCentrum&#160;Duszpasterskie Archidiecezji&#160;Wrocławskiej\n<b>Wrocław, ul.&#160;Katedralna&#160;4</b>.\nTerminy spotkań znajdziesz w&#160;aktualnościach.</string>
     <string name="KomunikatBledu">Błąd odczytu pliku - niepoprawna konstrukcja pliku.</string>
-    <string name="title_activity_activity_www_login">Zaloguj</string>
-
-    <!-- Strings related to login -->
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password (optional)</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="error_invalid_email">This email address is invalid</string>
-    <string name="error_invalid_password">This password is too short</string>
-    <string name="error_incorrect_password">This password is incorrect</string>
-    <string name="error_field_required">This field is required</string>
-    <string name="permission_rationale">"Contacts permissions are needed for providing email
-        completions."
-    </string>
-    <string name="title_activity_activity_dns_groupsmat">Materiały formacyjne</string>
 </resources>
