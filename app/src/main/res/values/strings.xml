@@ -60,6 +60,8 @@
     <string name="title_activity_reminder">Przypomnienia</string>
     <string name="title_activity_app_options">Opcje</string>
     <string name="title_activity_contact">Kontakt</string>
+    <string name="title_activity_www_login">Zaloguj</string>
+    <string name="title_activity_dns_groupsmat">Materiały formacyjne</string>
     // Activity "Reminder"
     <string name="Odśwież">Odśwież</string>
     <string name="UstawPrzypomnienie">Ustaw Przypomnienie</string>
