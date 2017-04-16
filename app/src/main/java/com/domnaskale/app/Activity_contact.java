@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
+
 import static com.domnaskale.app.IntentManager.NO_CHANGE;
 
 public class Activity_contact extends AppCompatActivity {

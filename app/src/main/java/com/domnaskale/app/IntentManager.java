@@ -17,14 +17,16 @@ public class IntentManager {
     private static final int dns_news = 2;
     private static final int dns_info = 3;
     private static final int app_main = 4;
-    private static final int dns_contact = 5;
-    private static final int dns_groupsmat = 6;
-    private static final int dns_configuration = 7;
+    private static final int dns_groupsmat = 5;
+    private static final int dns_configuration = 6;
+    private static final int dns_contact = 7;
+
     public static final int UPPER = 1;
     public static final int NO_CHANGE = 0;
     public static final int SMALLER = -1;
     private static final String FONT_SIZE = "fontSize";
     private static float fontSize = 14;
+
     private static SharedPreferences.Editor sharedPreferences;
 
 

@@ -2,11 +2,12 @@ package com.domnaskale.app;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+
 import static com.domnaskale.app.IntentManager.NO_CHANGE;
 import static com.domnaskale.app.IntentManager.setFontSize;
 
