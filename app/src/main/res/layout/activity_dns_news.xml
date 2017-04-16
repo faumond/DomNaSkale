@@ -10,7 +10,6 @@
     android:background="#FFF6D0"
     tools:context="com.domnaskale.app.Activity_dns_news">
     <ScrollView
-        android:id="@+id/scrollview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
@@ -21,7 +20,8 @@
             android:paddingTop="2dp"
             android:paddingLeft="20dp"
             android:paddingBottom="2dp"
-            android:paddingRight="20dp">
+            android:paddingRight="20dp"
+            android:id="@+id/activity_dns_news">
             <TextView
                 android:text="@string/title_activity_dns_news"
                 android:id="@+id/IntroDNS"

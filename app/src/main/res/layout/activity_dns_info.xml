@@ -10,7 +10,6 @@
     android:background="#FFF6D0">
 
     <ScrollView
-        android:id="@+id/scrollview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
@@ -18,10 +17,11 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingTop="20dp"
-            android:paddingLeft="20dp"
-            android:paddingBottom="2dp"
-            android:paddingRight="20dp">
+            android:paddingTop="0dp"
+            android:paddingLeft="0dp"
+            android:paddingBottom="0dp"
+            android:paddingRight="0dp"
+            android:id="@+id/activity_dns_info">
             <WebView  xmlns:android="http://schemas.android.com/apk/res/android"
                 android:id="@+id/webview"
                 android:layout_width="wrap_content"

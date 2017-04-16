@@ -22,10 +22,10 @@
             android:label="@string/title_activity_dns_prayer"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".Activity_dns_info"
+            android:name=".Activity_calendar"
+            android:hardwareAccelerated="true"
             android:label="@string/title_activity_dns_info"
-            android:theme="@style/AppTheme"
-            android:hardwareAccelerated="true" />
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".Activity_contact"
             android:label="@string/title_activity_contact"
@@ -34,6 +34,7 @@
             android:name=".Activity_dns_news"
             android:label="@string/title_activity_dns_news"
             android:theme="@style/AppTheme" />
+        <activity android:name=".Activity_configuration"></activity>
     </application>
 
 </manifest>

@@ -9,8 +9,10 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.widget.Toast;
 
+import static com.domnaskale.app.IntentManager.NO_CHANGE;
 
-public class Activity_dns_info extends AppCompatActivity {
+
+public class Activity_calendar extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -40,8 +42,13 @@ public class Activity_dns_info extends AppCompatActivity {
             }
         }
         catch (Exception e) {
-            Toast.makeText(Activity_dns_info.this, "Napotkano błąd podczas próby wyświetlenia kalendarza", Toast.LENGTH_LONG).show();
+            Toast.makeText(Activity_calendar.this, "Napotkano błąd podczas próby wyświetlenia kalendarza", Toast.LENGTH_LONG).show();
         }
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        IntentManager.changeAllFields(findViewById(R.id.activity_dns_info), NO_CHANGE);
+    }
 }

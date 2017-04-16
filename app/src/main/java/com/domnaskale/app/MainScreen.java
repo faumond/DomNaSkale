@@ -1,12 +1,16 @@
 package com.domnaskale.app;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.Toast;
-import android.content.Intent;
+
+import static android.app.PendingIntent.getActivity;
+import static com.domnaskale.app.IntentManager.NO_CHANGE;
+import static com.domnaskale.app.IntentManager.setFontSize;
 
 public class MainScreen extends AppCompatActivity {
     private static final int dns_prayer   = 1;
@@ -17,38 +21,7 @@ public class MainScreen extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        Intent intent;
-
-        switch(item.getOrder()){
-            case app_main:
-                //Toast.makeText(getBaseContext(),R.string.Menu_app_main,Toast.LENGTH_SHORT).show();
-                intent = new Intent(this, MainScreen.class);
-                startActivity(intent);
-                break;
-            case dns_prayer:
-                //Toast.makeText(getBaseContext(),R.string.Menu_dns_prayer,Toast.LENGTH_SHORT).show();
-                intent = new Intent(this, Activity_dns_prayer.class);
-                startActivity(intent);
-                break;
-            case dns_news:
-                //Toast.makeText(getBaseContext(),R.string.Menu_dns_contact,Toast.LENGTH_SHORT).show();
-                intent = new Intent(this, Activity_dns_news.class);
-                startActivity(intent);
-                break;
-            case dns_info:
-                //Toast.makeText(getBaseContext(),R.string.Menu_dns_info,Toast.LENGTH_SHORT).show();
-                intent = new Intent(this, Activity_dns_info.class);
-                startActivity(intent);
-                break;
-            case dns_contact:
-                //Toast.makeText(getBaseContext(),R.string.Menu_dns_contact,Toast.LENGTH_SHORT).show();
-                intent = new Intent(this, Activity_contact.class);
-                startActivity(intent);
-                break;
-            default:
-                Toast.makeText(getBaseContext(),"Default option executed",Toast.LENGTH_SHORT).show();
-                break;
-        }
+        startActivity(IntentManager.itemSelected(item,getBaseContext(),this));
         return super.onOptionsItemSelected(item);
     }
 
@@ -63,5 +36,13 @@ public class MainScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(com.domnaskale.app.R.layout.activity_main_screen);
+        SharedPreferences sharedPref = getSharedPreferences("screenConfig", Context.MODE_PRIVATE);
+        setFontSize(sharedPref, sharedPref.edit());
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        IntentManager.changeAllFields(findViewById(R.id.activity_main_screen), NO_CHANGE);
     }
 }
