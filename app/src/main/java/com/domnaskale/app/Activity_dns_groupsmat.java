@@ -61,7 +61,7 @@ public class Activity_dns_groupsmat extends AppCompatActivity {
     private String ReadAccessCode(){
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         String strAccessCode = preferences.getString("WWW_ACCESS_CODE", "");
-        Toast.makeText(Activity_dns_groupsmat.this, "Kod:" + strAccessCode, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(Activity_dns_groupsmat.this, "Kod:" + strAccessCode, Toast.LENGTH_SHORT).show();
 
         return strAccessCode;
     }
