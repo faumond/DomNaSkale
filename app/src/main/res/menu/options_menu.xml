@@ -33,9 +33,9 @@
         android:visible="true"
         android:enabled="true"
         android:orderInCategory="4"/>
-    <item android:id="@+id/Menu_dns_contact"
-        android:title="@string/Menu_dns_contact"
-        android:titleCondensed="@string/Menu_dns_contact"
+    <item android:id="@+id/Menu_dns_groupsmat"
+        android:title="@string/Menu_dns_groupsmat"
+        android:titleCondensed="@string/Menu_dns_groupsmat"
         android:icon="@drawable/ic_email_black_24dp"
         app:showAsAction="ifRoom"
         android:visible="true"
@@ -43,10 +43,18 @@
         android:orderInCategory="5"/>
     <item android:id="@+id/Menu_dns_configuration"
         android:title="@string/Menu_dns_configuration"
-        android:titleCondensed="@string/Menu_dns_contact"
+        android:titleCondensed="@string/Menu_dns_configuration"
         android:icon="@drawable/ic_email_black_24dp"
         app:showAsAction="ifRoom"
         android:visible="true"
         android:enabled="true"
         android:orderInCategory="6"/>
+    <item android:id="@+id/Menu_dns_contact"
+        android:title="@string/Menu_dns_contact"
+        android:titleCondensed="@string/Menu_dns_contact"
+        android:icon="@drawable/ic_email_black_24dp"
+        app:showAsAction="ifRoom"
+        android:visible="true"
+        android:enabled="true"
+        android:orderInCategory="7"/>
 </menu>

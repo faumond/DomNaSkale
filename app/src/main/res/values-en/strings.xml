@@ -63,6 +63,7 @@
     <string name="Menu_dns_contact">
         Contact
     </string>
+    <string name="Menu_dns_groupsmat">Materiały formacyjne</string>
     // activity titles
     <string name="title_activity_app_main">House on Rock</string>
     <string name="title_activity_dns_prayer">Prayer</string>

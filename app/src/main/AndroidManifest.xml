@@ -34,6 +34,13 @@
             android:name=".Activity_dns_news"
             android:label="@string/title_activity_dns_news"
             android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activity_dns_login"
+            android:label="@string/title_activity_www_login" />
+        <activity
+            android:name=".Activity_dns_groupsmat"
+            android:label="@string/title_activity_dns_groupsmat"
+            android:theme="@style/AppTheme" ></activity>
         <activity android:name=".Activity_configuration"></activity>
     </application>
 
