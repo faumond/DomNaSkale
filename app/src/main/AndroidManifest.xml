@@ -4,6 +4,11 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/dnsmalelogo"
@@ -22,7 +27,7 @@
             android:label="@string/title_activity_dns_prayer"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".Activity_calendar"
+            android:name=".Activity_dns_info"
             android:hardwareAccelerated="true"
             android:label="@string/title_activity_dns_info"
             android:theme="@style/AppTheme" />
@@ -34,7 +39,13 @@
             android:name=".Activity_dns_news"
             android:label="@string/title_activity_dns_news"
             android:theme="@style/AppTheme" />
-        <activity android:name=".Activity_configuration"></activity>
+        <activity
+            android:name=".Activity_dns_login"
+            android:label="@string/title_activity_activity_www_login" />
+        <activity
+            android:name=".Activity_dns_groupsmat"
+            android:label="@string/title_activity_activity_dns_groupsmat"
+            android:theme="@style/AppTheme" ></activity>
     </application>
 
 </manifest>

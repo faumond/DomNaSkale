@@ -60,6 +60,7 @@
                 android:layout_below="@id/ContactInvit"
                 android:text="@string/contact_invitation2" />
             <LinearLayout
+                android:id="@+id/layoutbuttons"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
@@ -83,6 +84,17 @@
                     android:clickable="true"
                     android:src="@mipmap/ic_mail"/>
             </LinearLayout>
+
+
+            <Button
+                android:id="@+id/logoutbutton"
+                android:layout_below="@id/layoutbuttons"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Wyloguj ze strony WWW"
+                android:textStyle="bold" />
         </RelativeLayout>
     </ScrollView>
 </RelativeLayout>

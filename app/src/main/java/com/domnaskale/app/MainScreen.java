@@ -1,23 +1,12 @@
 package com.domnaskale.app;
 
-import android.content.Context;
-import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import static android.app.PendingIntent.getActivity;
-import static com.domnaskale.app.IntentManager.NO_CHANGE;
-import static com.domnaskale.app.IntentManager.setFontSize;
-
 public class MainScreen extends AppCompatActivity {
-    private static final int dns_prayer   = 1;
-    private static final int dns_news     = 2;
-    private static final int dns_info     = 3;
-    private static final int app_main     = 4;
-    private static final int dns_contact  = 5;
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -36,13 +25,5 @@ public class MainScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(com.domnaskale.app.R.layout.activity_main_screen);
-        SharedPreferences sharedPref = getSharedPreferences("screenConfig", Context.MODE_PRIVATE);
-        setFontSize(sharedPref, sharedPref.edit());
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        IntentManager.changeAllFields(findViewById(R.id.activity_main_screen), NO_CHANGE);
     }
 }
