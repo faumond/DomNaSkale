@@ -8,25 +8,31 @@
     android:paddingBottom="2dp"
     android:paddingRight="2dp"
     android:background="#FFF6D0">
-
-        <ScrollView
-            android:id="@+id/scrollview"
+        <Spinner
+            android:id="@+id/spnMaterialsGroups"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#f49241"/>
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/txtMaterialsGroups"
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            >
-                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:paddingTop="20dp"
-                    android:paddingLeft="20dp"
-                    android:paddingBottom="2dp"
-                    android:paddingRight="20dp">
-                        <WebView  xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:id="@+id/wvMaterials"
-                            android:layout_width="wrap_content"
-                            android:layout_height="500dp"
-                            />
-                </RelativeLayout>
-        </ScrollView>
+            android:layout_below="@id/spnMaterialsGroups"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="2dp"
+            android:paddingRight="20dp">
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:id="@+id/webmaterials"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoLink="web"
+                        android:linksClickable="true"/>
+                </ScrollView>
+        </RelativeLayout>
 </RelativeLayout>
