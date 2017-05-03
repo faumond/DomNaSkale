@@ -66,9 +66,9 @@ public class Activity_dns_news extends AppCompatActivity {
                     prefix = strNewLine.charAt(62);
 
                     if (Character.isLetter(prefix)) {
-                        strNewLine = strNewLine.substring(62, end);
+                        strNewLine = strNewLine.substring(0, end);
                     } else {
-                        strNewLine = strNewLine.substring(63, end);
+                        strNewLine = strNewLine.substring(0, end);
                     }
 
                     TextView textView = (TextView) findViewById(com.domnaskale.app.R.id.News);
